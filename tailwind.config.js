@@ -11,9 +11,6 @@ module.exports = {
         PT: ["PT Sans Narrow", "sans-serif"],
         teko: ["Teko", "sans-serif"],
         Kufi: ["Reem Kufi Fun", "sans-serif"],
-        Aref: ["Aref Ruqaa Ink", "sans-serif"],
-        Alkalami: ["Alkalami", "sans-serif"],
-        Qahiri: ["Qahiri", "sans-serif"],
       },
       colors: {
         background: "#2a2438",

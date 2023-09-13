@@ -6,7 +6,7 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0  flex items-start justify-between max-w-7xl mx-auto z-40 font-PT text-lg">
+    <header className="sticky top-0 flex items-start justify-between w-full mx-auto z-40 font-PT text-lg">
       <motion.div
         initial={{
           x: -500,
@@ -21,7 +21,7 @@ function Header({}: Props) {
         transition={{
           duration: 0.75,
         }}
-        className="flex flex-row items-center "
+        className="flex flex-row items-center w-3/12"
       >
         <div className="flex justify-around">
           <SocialIcon
@@ -37,8 +37,10 @@ function Header({}: Props) {
         </div>
       </motion.div>
 
-      <div className="font-Kufi p-3 text-3xl text-gray-300">
-        {/* LOGO */} <span>بُودْمَاغْ شَاهِينْ</span>{" "}
+      <div className="font-Kufi p-3 text-3xl text-gray-300 w-6/12 text-center">
+        <a href="/">
+          {/* LOGO */} <span className="select-none">بُودْمَاغْ شَاهِينْ</span>{" "}
+        </a>
       </div>
       <motion.div
         initial={{
@@ -54,10 +56,17 @@ function Header({}: Props) {
         transition={{
           duration: 0.75,
         }}
-        className="flex flex-row items-center  cursor-pointer"
+        className="flex flex-row items-center justify-end cursor-pointer w-3/12"
       >
-        <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
-        <p className="uppercase hidden md:inline-flex text-sm ">Get in touch</p>
+        <div className="mr-4">
+          <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
+          <a
+            href="mailto:boudjellaliabiryasmine@gmail.com"
+            className="uppercase hidden md:inline-flex text-sm text-center items-center hover:text-gray-400"
+          >
+            get in touch
+          </a>
+        </div>
       </motion.div>
     </header>
   );

@@ -1,11 +1,9 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import Header from "@/components/Header";
-import Intro from "@/components/Intro";
 import { AnimatePresence } from "framer-motion";
-import About from "@/components/About";
-const inter = Inter({ subsets: ["latin"] });
+import AboutFixed from "@/components/AboutFixed";
+import IntroFixed from "@/components/IntroFixed";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -16,11 +14,14 @@ export default function Home() {
       <Header />
       <section id="Intro" className="snap-start">
         <AnimatePresence>
-          <Intro />
+          <IntroFixed />
         </AnimatePresence>
       </section>
       <section id="About" className="snap-center">
-        <About />
+        <AboutFixed />
+      </section>
+      <section id="Experience" className="snap-center">
+        <Experience />
       </section>
     </div>
   );

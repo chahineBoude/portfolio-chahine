@@ -4,7 +4,7 @@ import TextTransition, { presets } from "react-text-transition";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
-import chahine from "../../public/assets/1654079263654.jpg";
+import chahine from "../../public/assets/IMG_20230610_165231.jpg";
 import Link from "next/link";
 
 type Props = {};

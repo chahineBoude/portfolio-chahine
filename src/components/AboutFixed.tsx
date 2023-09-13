@@ -1,40 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
-import chahine from "../../public/assets/1654079263654.jpg";
+import chahine from "../../public/assets/IMG20230610164805.jpg";
 import Image from "next/image";
 
 type Props = {};
 
-function About({}: Props) {
+function AboutFixed({}: Props) {
   return (
-    <div className="flex relative flex-col md:flex-row text-center md:text-left h-screen max-w-7xl px-10 justify-evenly mx-auto items-center w-full">
-      <h1 className="absolute top-24 text-2xl text-gray-300 uppercase pb-5 pt-5 tracking-[25px] font-teko">
-        About
-      </h1>
-      <div className="flex flex-col md:flex-row justify-around items-center text-left w-  h-1/2">
+    <div className=" relative flex text-center md:text-left h-screen justify-evenly items-center">
+      <div className="w-full md:w-3/12 absolute top-20 md:top-20 text-4xl uppercase tracking-[25px] font-teko text-gray-300 text-center mt-8">
+        <h1 className="pl-6">About</h1>
+      </div>
+      <div className="flex flex-col md:flex-row justify-evenly items-center text-left w-full h-1/2 mt-12 md:mt-8">
         <motion.div
           initial={{
             x: -200,
             opacity: 0,
           }}
           transition={{
-            duration: 2,
+            duration: 1,
           }}
           whileInView={{
             x: 0,
             opacity: 1,
           }}
           viewport={{ once: true }}
-          className="mt-48 md:mt-10 flex justify-center items-center text-center 2xl:w-4/12"
+          className="mt-16"
         >
           <Image
             src={chahine}
             alt="about_pic"
-            className="m-0 md:m-0 flex-shrink-0 w-64 h-64 lg:h-80 2xl:w-[500px] 2xl:h-[600px] rounded-full lg:rounded-3xl object-cover"
+            className="m-0 md:m-0 flex-shrink-0 w-44 h-44 md:w-64 md:h-64 lg:h-80 2xl:w-[500px] 2xl:h-[600px] rounded-full lg:rounded-3xl object-cover"
           />
         </motion.div>
         <motion.div
-          className="space-y-15 md:space-y-0 px-0 2xl:px-24 2xl:w-8/12 max-w-3xl"
+          className="w-8/12 text-center md:text-left"
           initial={{
             opacity: 0,
           }}
@@ -70,4 +70,4 @@ function About({}: Props) {
   );
 }
 
-export default About;
+export default AboutFixed;
