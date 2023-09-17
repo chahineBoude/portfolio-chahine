@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import AboutFixed from "@/components/AboutFixed";
 import IntroFixed from "@/components/IntroFixed";
 import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section id="Experience" className="snap-center">
         <Experience />
+      </section>
+      <section id="Skills" className="snap-start">
+        <Skills />
       </section>
     </div>
   );

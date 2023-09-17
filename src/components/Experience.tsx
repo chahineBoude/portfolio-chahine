@@ -5,11 +5,14 @@ type Props = {};
 
 function Experience({}: Props) {
   return (
-    <div className="relative flex text-center md:text-left h-screen justify-evenly items-center overflow-hidden flex-col md:flex-row">
-      <div className="w-full md:w-3/12 absolute top-20 text-4xl uppercase tracking-[25px] font-teko text-gray-300 text-center ">
+    <div className="relative flex text-center h-screen justify-evenly items-center overflow-hidden flex-col md:flex-row">
+      <div className="w-full md:w-3/12 absolute top-32 lg:top-20 text-4xl uppercase tracking-[25px] font-teko text-gray-300 text-center ">
         <h1>Experience</h1>
       </div>
-      <div>
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory xl:mt-12 xl:pt-28 2xl:pt-0 md:text-left">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
         <ExperienceCard />
       </div>
     </div>

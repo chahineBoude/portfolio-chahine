@@ -9,7 +9,7 @@ function AboutFixed({}: Props) {
   return (
     <div className=" relative flex text-center md:text-left h-screen justify-evenly items-center">
       <div className="w-full md:w-3/12 absolute top-20 md:top-20 text-4xl uppercase tracking-[25px] font-teko text-gray-300 text-center mt-8">
-        <h1 className="pl-6">About</h1>
+        <h1>About</h1>
       </div>
       <div className="flex flex-col md:flex-row justify-evenly items-center text-left w-full h-1/2 mt-12 md:mt-8">
         <motion.div

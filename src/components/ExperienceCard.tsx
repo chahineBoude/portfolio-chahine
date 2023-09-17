@@ -7,7 +7,7 @@ type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
-    <article>
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[700px] 2xl:w-[900px] snap-center bg-shade7 py-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity">
       <motion.div
         initial={{
           y: -200,
@@ -30,13 +30,17 @@ function ExperienceCard({}: Props) {
           className="h-32 w-32 rounded-full object-cover object-center"
         />
       </motion.div>
-      <div>
-        <h4>job title</h4>
-        <p>Company name</p>
+      <div className="px-0 md:px-5 sm:px-10">
+        <h4 className="font-light font-teko text-5xl 2xl:text-6xl">
+          job title
+        </h4>
+        <p className="pt-2 font-bold font-PT text-2xl 2xl:text-3xl">
+          Company name
+        </p>
         <div>{/* tech used */}</div>
-        <p>date</p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>tasks</li>
+        <p className="pt-2 font-extralight font-PT 2xl:text-xl">2021-2023</p>
+        <ul className="list-disc space-y-4 ml-5 text-xl 2xl:text-2xl pt-2 font-PT">
+          <li>task</li>
           <li>tasks</li>
           <li>tasks</li>
         </ul>
