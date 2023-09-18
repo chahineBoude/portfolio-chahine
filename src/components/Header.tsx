@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 
@@ -59,9 +60,11 @@ function Header({}: Props) {
         className="flex flex-row items-center justify-end cursor-pointer w-3/12"
       >
         <div className="mr-4">
-          <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
+          <Link href="#Contact">
+            <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
+          </Link>
           <a
-            href="mailto:boudjellaliabiryasmine@gmail.com"
+            href="mailto:chahineboude@gmail.com"
             className="uppercase hidden md:inline-flex text-sm text-center items-center hover:text-gray-400"
           >
             get in touch
